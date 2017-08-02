@@ -25,6 +25,7 @@ class CreatePostsTable extends Migration
             $table->foreign('user_id')
                 ->references('id')
                 ->on('users');
+            $table->string('tag')->change();
             $table->string('status');
             $table->timestamps();
         });

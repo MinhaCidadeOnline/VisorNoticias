@@ -58,6 +58,11 @@
 					</div>
 
 					<div class="form-group">
+						<span>Tag</span>
+						<input type="text" name="tag" class="form-control" value="{{ $post->tag }}">
+					</div>
+
+					<div class="form-group">
 						<span>Status</span>
 						<select name="status" class="form-control">
 							<option value="0" {{ $post->status == 0 ? 'selected' : null }}>Inativo</option>

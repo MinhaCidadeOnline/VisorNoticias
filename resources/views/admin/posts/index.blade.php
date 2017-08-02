@@ -18,7 +18,7 @@
                                 <h2 class="panel-title">{{ $post->title }}</h2>
                             </header>
                             <div class="panel-body">
-                                <img src="{{ asset($post->image) }}" alt="" class="img-resposive">
+                                <img src="{{ thumbnail($post->image, 800,320) }}" alt="" style="max-width:100%;">
                             </div>
                             <footer class="panel-footer">
                                 <form action="{{ route('admin.posts.destroy', $post->id) }}" method="post" class="form-del">

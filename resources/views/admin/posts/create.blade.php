@@ -57,6 +57,11 @@
 					</div>
 
 					<div class="form-group">
+						<span>Tag</span>
+						<input type="text" name="tag" class="form-control" value="{{ old('tag') }}">
+					</div>
+
+					<div class="form-group">
 						<span>Status</span>
 						<select name="status" class="form-control">
 							<option value="0">Inativo</option>

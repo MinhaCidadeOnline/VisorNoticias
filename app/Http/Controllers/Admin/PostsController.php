@@ -40,6 +40,7 @@ class PostsController extends Controller
             'category_id' => request()->category_id,
             'user_id' => auth()->user()->id,
             'status' => request()->status,
+            'tag' => request()->tag
         ]);
 
         return redirect()->route('admin.posts.index');
@@ -54,7 +55,7 @@ class PostsController extends Controller
 
     public function update(Request $request, $id)
     {
-        if(request()->hasFile('image')){
+        if (request()->hasFile('image')) {
             $image = request()->image->store('uploads/' . date('Y/m'));
         } else {
             $image = Post::where('id', $id)->select('image')->first()->image;
@@ -69,6 +70,7 @@ class PostsController extends Controller
         $post->category_id = request()->category_id;
         $post->user_id = auth()->user()->id;
         $post->status = request()->status;
+        $post->tag = request()->tag;
         $post->save();
 
         return redirect()->route('admin.posts.index');
