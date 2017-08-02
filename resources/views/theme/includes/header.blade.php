@@ -59,7 +59,7 @@
                                 <li class="dropdown"><a href="{{ route('index') }}">Home</a></li>
 
                                 <li class="dropdown mega-dropdown">
-                                    <a href="category-style1.html" class="dropdown-toggle" >Visor TV <i class="fa fa-angle-down"></i></a>
+                                    <a href="" class="dropdown-toggle" >Visor TV <i class="fa fa-angle-down"></i></a>
                                     <div class="dropdown-menu mega-menu-content hidden-xs hidden-sm clearfix">
                                         <div class="menu-tab">
                                             <ul class="nav nav-tabs nav-stacked col-md-2" data-toggle="tab-hover">
