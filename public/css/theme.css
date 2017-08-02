@@ -1,0 +1,59 @@
+.header {
+    padding: 0;
+}
+
+.logo {
+    padding: 30px 0;
+}
+
+.anuncio-header {
+    margin: 20px 0;
+}
+
+.block-wrapper-custom {
+    padding: 0 0 20px 0;
+}
+
+.featured-slider .item {
+    min-height: 425px;
+}
+
+.sidebar-center {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.seja-nosso-reporter {
+    width: 100%;
+    display: block;
+    margin: 30px 0 0 0;
+}
+
+.seja-nosso-reporter img {
+    width: 100%;
+}
+
+.anuncio-lateral {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.featured-tab-custom {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px){
+
+    .logo {
+        padding: 10px 0;
+    }
+
+    .logo img {
+        width: 200px;
+        height: auto;
+    }
+
+}
