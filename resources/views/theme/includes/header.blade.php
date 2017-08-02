@@ -197,7 +197,7 @@
                         <div class="item">
                             <div class="post-content">
                                 <h2 class="post-title title-small">
-                                    <a href="#">{{ $trending->title }}</a>
+                                    <a href="{{ route('category', $trending->name) }}">{{ $trending->title }}</a>
                                 </h2>
                             </div><!-- Post content end -->
                         </div>

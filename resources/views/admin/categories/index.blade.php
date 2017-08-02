@@ -21,7 +21,7 @@
 								<form action="{{ route('admin.categories.destroy', $category->id) }}" method="post" class="form-del">
 									{{ csrf_field() }}
 									{{ method_field('DELETE') }}
-									<a href="" class="btn btn-sm btn-primary">Acessar no site</a>
+									<a href="{{ route('category', $category->name) }}" target="_blank" class="btn btn-sm btn-primary">Acessar no site</a>
 									<a href="{{ route('admin.categories.edit', $category->id) }}" class="btn btn-sm btn-success">Editar</a>
 									<button class="btn btn-sm btn-danger">Deletar</button>
 								</form>
